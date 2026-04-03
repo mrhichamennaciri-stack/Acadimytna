@@ -45,8 +45,13 @@ const closeButtons = document.querySelectorAll('.close-modal');
 modalButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         const modalId = btn.getAttribute('data-target');
-        document.getElementById(modalId).style.display = 'block';
-        document.body.style.overflow = 'hidden'; // Prevent scrolling
+        const modal = document.getElementById(modalId);
+        if (modal) {
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        } else {
+            console.warn(`Modal with ID "${modalId}" not found.`);
+        }
     });
 });
 

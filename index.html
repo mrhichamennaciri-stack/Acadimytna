@@ -31,6 +31,7 @@
                 <li><a href="#canva">Canva</a></li>
                 <li><a href="#ia">IA</a></li>
                 <li><a href="#exercises">التمارين</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScWq38Pei6_Jnx7EAgaTKnVNrMMZOByEF3b2Yu1BQp7xByhlQ/viewform" target="_blank" class="nav-btn-reg">التسجيل</a></li>
             </ul>
         </nav>
     </header>
@@ -171,11 +172,13 @@
                         <div class="course-icon"><i class="fas fa-pencil-alt"></i></div>
                         <h3>تمارين تطبيقية</h3>
                         <p class="description">مشاريع وملفات عمل تطبيقية لاختبار مهاراتك بشكل عملي.</p>
-                        </ul>
-                        <button class="btn-primary open-modal" data-target="modal-exercises"
-                            style="width: 100%; margin-top: 1.5rem;">عرض التمارين</button>
-                        <button class="btn-outline open-modal" data-target="modal-tests"
-                            style="width: 100%; margin-top: 1rem;">عرض اختبارات نهاية الوحدة</button>
+                        <a href="https://classroom.google.com/c/ODQ1MzE4NDU3NzMw" target="_blank" class="btn-primary"
+                            style="width: 100%; margin-top: 1.5rem; text-decoration: none; display: inline-block; text-align: center;">عرض التمارين</a>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; margin-top: 1rem;">
+                            <button class="btn-outline open-modal" data-target="modal-test-word" style="padding: 0.8rem 0.5rem; font-size: 0.85rem;">Word</button>
+                            <button class="btn-outline open-modal" data-target="modal-test-excel" style="padding: 0.8rem 0.5rem; font-size: 0.85rem;">Excel</button>
+                            <button class="btn-outline open-modal" data-target="modal-test-ppt" style="padding: 0.8rem 0.5rem; font-size: 0.85rem;">PPT</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -340,8 +343,86 @@
             <div class="logo">أكاديميتنا</div>
             <div class="logo-subtitle">Academy Informatique</div>
         </div>
-        <p>© 2026 جميع الحقوق محفوظة لأكاديمية أحمد للتعليم الرقمي</p>
+        <p>© 2026 جميع الحقوق محفوظة لأكاديمية هشام الناصري للتعليم الرقمي</p>
     </footer>
+
+    <!-- Modal Test Word -->
+    <div id="modal-test-word" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">رجوع</span>
+            <div class="modal-header">
+                <div class="logo">أكاديميتنا</div>
+                <h2>اختبار Microsoft Word</h2>
+            </div>
+            <div class="modal-body">
+                <div class="session-block">
+                    <h3>محاور الاختبار النهائي</h3>
+                    <ul>
+                        <li>إعداد المستند وضبط الهوامش والمقاسات</li>
+                        <li>تنسيق النصوص والفقرات باستخدام الأنماط (Styles)</li>
+                        <li>إنشاء وتنسيق الجداول المتقدمة</li>
+                        <li>إدراج الصور والعناصر الرسومية مع ضبط الالتفاف</li>
+                        <li>إعداد الفهرس التلقائي وقائمة الصور</li>
+                    </ul>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://classroom.google.com/c/ODQ1MzE4NDU3NzMw" target="_blank" class="btn-primary">ابدأ الاختبار الآن</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Test Excel -->
+    <div id="modal-test-excel" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">رجوع</span>
+            <div class="modal-header">
+                <div class="logo">أكاديميتنا</div>
+                <h2>اختبار Microsoft Excel</h2>
+            </div>
+            <div class="modal-body">
+                <div class="session-block">
+                    <h3>محاور الاختبار النهائي</h3>
+                    <ul>
+                        <li>استخدام الدوال الحسابية والمنطقية (Sum, Average, If, Vlookup)</li>
+                        <li>تنسيق الجداول والتعامل مع الخلايا</li>
+                        <li>إنشاء الرسوم البيانية وتحليلها</li>
+                        <li>استخدام الجداول المحورية (Pivot Tables)</li>
+                        <li>حماية ورقة العمل والتحقق من صحة البيانات</li>
+                    </ul>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://classroom.google.com/c/ODQ1MzE4NDU3NzMw" target="_blank" class="btn-primary">ابدأ الاختبار الآن</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Test PPT -->
+    <div id="modal-test-ppt" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">رجوع</span>
+            <div class="modal-header">
+                <div class="logo">أكاديميتنا</div>
+                <h2>اختبار Microsoft PowerPoint</h2>
+            </div>
+            <div class="modal-body">
+                <div class="session-block">
+                    <h3>محاور الاختبار النهائي</h3>
+                    <ul>
+                        <li>تصميم الشرائح واستخدام الـ Master Slide</li>
+                        <li>إدراج وتنسيق الوسائط المتعددة (Video/Audio)</li>
+                        <li>إضافة الحركات (Animations) والانتقالات (Transitions)</li>
+                        <li>هندسة العروض التقديمية وتدفق المعلومات</li>
+                        <li>تصدير العرض بصيغ مختلفة (PDF/Video)</li>
+                    </ul>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://classroom.google.com/c/ODQ1MzE4NDU3NzMw" target="_blank" class="btn-primary">ابدأ الاختبار الآن</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
