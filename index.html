@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديميتنا - طريقكم لاحتراف المهارات الرقمية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231b438d%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2270%22 font-family=%22Cairo%22 font-weight=%22bold%22>A</text></svg>">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div class="logo">أكاديميتنا</div>
+                <div class="logo-subtitle">Academy Informatique</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#word">Word</a></li>
+                <li><a href="#excel">Excel</a></li>
+                <li><a href="#ppt">PowerPoint</a></li>
+                <li><a href="#canva">Canva</a></li>
+                <li><a href="#ia">IA</a></li>
+                <li><a href="#exercises">التمارين</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>مرحباً بكم في <span>أكاديميتنا</span> - طريقكم لاحتراف المهارات الرقمية</h1>
+                    <p>معكم هشام الناصري، مدرب ومعلم رقمي متخصص في البرمجيات المكتبية والتصميم. شغفي هو تبسيط
+                        التكنولوجيا وجعلها أداة فعالة في يد كل متعلم.</p>
+                    <div class="hero-btns">
+                        <a href="#courses" class="btn-primary">ابدأ التعلم الآن</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-bg"></div>
+                    <img src="hicham ennaciri.jpg" alt="المدرب أحمد" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Modules Section -->
+        <section id="courses">
+            <div class="section-title">
+                <h2>وحداتنا التعليمية</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Word -->
+                <div id="word" class="course-card">
+                    <img src="word.jpg" alt="Microsoft Word" class="course-image">
+                    <div class="card-content">
+                        <div class="course-icon"><i class="fas fa-file-word"></i></div>
+                        <h3>Microsoft Word</h3>
+                        <p class="description">إتقان فن تحرير المستندات والتقارير الإدارية بمهنية عالية.</p>
+                        <ul class="points">
+                            <li>كيفية تنسيق النصوص والفقرات</li>
+                            <li>إنشاء الجداول والمراسلات التلقائية</li>
+                            <li>إعداد الفهارس والمراجع</li>
+                        </ul>
+                        <button class="btn-primary open-modal" data-target="modal-word"
+                            style="width: 100%; margin-top: 1.5rem;">عرض البرنامج الكامل</button>
+                        <a href="https://docs.google.com/presentation/d/1mFqhIowRyzRxzUFdQa0dwtooe_XQP8j3Zfgk-dhBSyQ/edit?slide=id.p1#slide=id.p1"
+                            target="_blank" class="btn-outline"
+                            style="width: 100%; margin-top: 1rem; text-decoration: none; display: inline-block; text-align: center;">عرض الدرس</a>
+                    </div>
+                </div>
+
+                <!-- Excel -->
+                <div id="excel" class="course-card">
+                    <img src="Excel.jpg" alt="Microsoft Excel" class="course-image">
+                    <div class="card-content">
+                        <div class="course-icon"><i class="fas fa-file-excel"></i></div>
+                        <h3>Microsoft Excel</h3>
+                        <p class="description">من الصفر إلى تحليل البيانات المتقدم واستخدام المعادلات الذكية.</p>
+                        <ul class="points">
+                            <li>التعامل مع الصيغ والدوال الأساسية والمتقدمة</li>
+                            <li>التنسيق الشرطي وتحليل البيانات</li>
+                            <li>إنشاء الجداول المحورية Pivot Tables</li>
+                        </ul>
+                        <button class="btn-primary open-modal" data-target="modal-excel"
+                            style="width: 100%; margin-top: 1.5rem;">عرض البرنامج الكامل</button>
+                        <a href="https://docs.google.com/presentation/d/1_oXEPGeCSJKiP7bg8y3rYqfSMw7BCTtt2KlHN2PFCiY/edit?slide=id.p1#slide=id.p1"
+                            target="_blank" class="btn-outline"
+                            style="width: 100%; margin-top: 1rem; text-decoration: none; display: inline-block; text-align: center;">عرض الدرس</a>
+                    </div>
+                </div>
+
+                <!-- PowerPoint -->
+                <div id="ppt" class="course-card">
+                    <img src="PPT.jpg" alt="Microsoft PowerPoint" class="course-image">
+                    <div class="card-content">
+                        <div class="course-icon"><i class="fas fa-file-powerpoint"></i></div>
+                        <h3>Microsoft PowerPoint</h3>
+                        <p class="description">تصميم عروض تقديمية بصرية تأسر الجمهور وتوصل فكرتك بقوة.</p>
+                        <ul class="points">
+                            <li>هندسة الشرائح واختيار الألوان</li>
+                            <li>إضافة الحركات والانتقالات الاحترافية</li>
+                            <li>دمج الوسائط المتعددة (فيديو/صوت)</li>
+                        </ul>
+                        <button class="btn-primary open-modal" data-target="modal-ppt"
+                            style="width: 100%; margin-top: 1.5rem;">عرض البرنامج الكامل</button>
+                        <a href="#" target="_blank" class="btn-outline"
+                            style="width: 100%; margin-top: 1rem; text-decoration: none; display: inline-block; text-align: center;">عرض الدرس</a>
+                    </div>
+                </div>
+
+                <!-- Canva -->
+                <div id="canva" class="course-card">
+                    <img src="canva.jpg" alt="Canva" class="course-image">
+                    <div class="card-content">
+                        <div class="course-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Canva</h3>
+                        <p class="description">ابدأ رحلتك في التصميم الجرافيكي وصناعة المحتوى البصري بدون تعقيد.</p>
+                        <ul class="points">
+                            <li>أساسيات التصميم والهوية البصرية</li>
+                            <li>تصميم المنشورات والعروض التدريبية</li>
+                            <li>استخدام أدوات الذكاء الاصطناعي داخل كانفا</li>
+                        </ul>
+                        <button class="btn-primary open-modal" data-target="modal-canva"
+                            style="width: 100%; margin-top: 1.5rem;">عرض البرنامج الكامل</button>
+                        <a href="#" target="_blank" class="btn-outline"
+                            style="width: 100%; margin-top: 1rem; text-decoration: none; display: inline-block; text-align: center;">عرض الدرس</a>
+                    </div>
+                </div>
+
+                <!-- AI -->
+                <div id="ia" class="course-card">
+                    <img src="IA.jpg" alt="الذكاء الاصطناعي (IA)" class="course-image">
+                    <div class="card-content">
+                        <div class="course-icon"><i class="fas fa-brain"></i></div>
+                        <h3>الذكاء الاصطناعي (IA)</h3>
+                        <p class="description">استغلال قوة الـ IA لزيادة الإنتاجية وتسريع وتيرة العمل اليومي.</p>
+                        <ul class="points">
+                            <li>أفضل أدوات التوليد النصي والبصري</li>
+                            <li>تقنيات كتابة البرومت (Prompt Engineering)</li>
+                            <li>أتمتة المهام المكتبية باستخدام الـ AI</li>
+                        </ul>
+                        <button class="btn-primary open-modal" data-target="modal-ia"
+                            style="width: 100%; margin-top: 1.5rem;">عرض البرنامج الكامل</button>
+                        <a href="#" target="_blank" class="btn-outline"
+                            style="width: 100%; margin-top: 1rem; text-decoration: none; display: inline-block; text-align: center;">عرض الدرس</a>
+                    </div>
+                </div>
+
+                <!-- Exercises -->
+                <div id="exercises" class="course-card">
+                    <img src="التمارين.jpg" alt="تمارين تطبيقية" class="course-image">
+                    <div class="card-content">
+                        <div class="course-icon"><i class="fas fa-pencil-alt"></i></div>
+                        <h3>تمارين تطبيقية</h3>
+                        <p class="description">مشاريع وملفات عمل تطبيقية لاختبار مهاراتك بشكل عملي.</p>
+                        </ul>
+                        <button class="btn-primary open-modal" data-target="modal-exercises"
+                            style="width: 100%; margin-top: 1.5rem;">عرض التمارين</button>
+                        <button class="btn-outline open-modal" data-target="modal-tests"
+                            style="width: 100%; margin-top: 1rem;">عرض اختبارات نهاية الوحدة</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="modal-word" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">رجوع</span>
+            <div class="modal-header">
+                <div class="logo">أكاديميتنا</div>
+                <h2>برنامج Microsoft Word</h2>
+            </div>
+            <div class="modal-body">
+                <div class="session-block">
+                    <h3>Introduction & Interface</h3>
+                    <ul>
+                        <li>Introduction à l’informatique : définition et domaines</li>
+                        <li>Découverte l’ordinateur</li>
+                        <li>Découverte de l’interface Word (Ruban – Backstage – Accès rapide)</li>
+                        <li>Étapes pour produire un bon document (Créer – Ouvrir – Enregistrer)</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Fondations du Texte</h3>
+                    <ul>
+                        <li>Bases du texte (Copier – Coller – Supprimer – Déplacer)</li>
+                        <li>Mise en forme (Police – Taille – Couleur)</li>
+                        <li>Alignement et Listes</li>
+                        <li>Rechercher et remplacer</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Mise en forme avancée & Images</h3>
+                    <ul>
+                        <li>Colonnes et Retraits</li>
+                        <li>Tabulations</li>
+                        <li>Interligne et espacement entre paragraphes</li>
+                        <li>Insertion et mise en forme des images</li>
+                        <li>Habillage du texte</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Éléments Structurels</h3>
+                    <ul>
+                        <li>Insertion de symboles et formes</li>
+                        <li>En-tête et pied de page</li>
+                        <li>Numérotation des pages</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Tableaux & Finalisation</h3>
+                    <ul>
+                        <li>Tableaux : création – fusion – mise en forme</li>
+                        <li>Mise en page</li>
+                        <li>Table des matières</li>
+                        <li>Correction orthographique</li>
+                        <li>Mini-projet Word</li>
+                        <li>Évaluation et remise des attestations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Excel -->
+    <div id="modal-excel" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">رجوع</span>
+            <div class="modal-header">
+                <div class="logo">أكاديميتنا</div>
+                <h2>برنامج Microsoft Excel</h2>
+            </div>
+            <div class="modal-body">
+                <div class="session-block">
+                    <h3>Bases & Format</h3>
+                    <ul>
+                        <li>Introduction à Excel & Interface</li>
+                        <li>Bases des cellules : insérer – supprimer – remplir – copier</li>
+                        <li>Lignes et colonnes & Mise en forme</li>
+                        <li>Format des nombres (devise – date – pourcentage)</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Gestion & Impression</h3>
+                    <ul>
+                        <li>Feuilles : ajouter – supprimer – déplacer – copier</li>
+                        <li>Rechercher et remplacer</li>
+                        <li>Mise en page et impression</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Formules & Fonctions</h3>
+                    <ul>
+                        <li>Formules & Références (absolues et relatives)</li>
+                        <li>Structure d’une fonction</li>
+                        <li>Fonctions : SOMME – MOYENNE – MIN – MAX – NB – SI</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Analyse & Graphiques</h3>
+                    <ul>
+                        <li>Tri et Filtre</li>
+                        <li>Graphiques & Mise en forme</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Projet Pratique</h3>
+                    <ul>
+                        <li>Projet Excel : Facture + TVA + TTC + graphique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal PPT -->
+    <div id="modal-ppt" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">رجوع</span>
+            <div class="modal-header">
+                <div class="logo">أكاديميتنا</div>
+                <h2>برنامج Microsoft PowerPoint</h2>
+            </div>
+            <div class="modal-body">
+                <div class="session-block">
+                    <h3>Présentation & Texte</h3>
+                    <ul>
+                        <li>Introduction à PowerPoint & Interface</li>
+                        <li>Créer et enregistrer une présentation</li>
+                        <li>Diapositives : ajouter – supprimer – copier</li>
+                        <li>Mises en page et zones de texte</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Design & Contenu</h3>
+                    <ul>
+                        <li>Insertion d’images – icônes – SmartArt</li>
+                        <li>Conception des diapositives</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Dynamisme & Masques</h3>
+                    <ul>
+                        <li>Transitions & Animations</li>
+                        <li>Gestion du masque des diapositives</li>
+                    </ul>
+                </div>
+                <div class="session-block">
+                    <h3>Projet Final</h3>
+                    <ul>
+                        <li>Projet PowerPoint : création d’une présentation professionnelle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo-container">
+            <div class="logo">أكاديميتنا</div>
+            <div class="logo-subtitle">Academy Informatique</div>
+        </div>
+        <p>© 2026 جميع الحقوق محفوظة لأكاديمية أحمد للتعليم الرقمي</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
